@@ -1,6 +1,6 @@
 # ghost-jsdelivr
 
-A simple helper to serve ghost theme helpers that would be served trough jsdelivr GPDR compatible with your own "public" directory in `content/public/`.
+A simple helper to serve ghost theme CDN content that would be served trough jsdelivr GPDR compatible with your own "public" directory in `content/public/`.
 
 ## Install
 
@@ -8,11 +8,22 @@ A simple helper to serve ghost theme helpers that would be served trough jsdeliv
 
    ```bash
    pushd content/public/
-   git clone https://github.com/ghost-jsdelivr -C cdn
+   git clone https://github.com/ghost-jsdelivr cdn
    cd cdn
    npm install && npm run build
    popd
    ```
+
+With [ncu](https://www.npmjs.com/package/npm-check-updates) installed:
+
+   ```bash
+   pushd content/public/
+   git clone https://github.com/ghost-jsdelivr cdn
+   cd cdn
+   ncu -u; npm install && npm run build
+   popd
+   ```
+
 
 ### 2. Adjust your config.production.json
 
