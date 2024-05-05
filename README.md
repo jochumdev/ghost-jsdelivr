@@ -20,7 +20,7 @@ With [ncu](https://www.npmjs.com/package/npm-check-updates) installed:
 pushd content/public/
 git clone https://github.com/ghost-jsdelivr cdn
 cd cdn
-ncu -u; npm install && npm run build
+ncu -u && npm install && npm run build
 popd
 ```
 
